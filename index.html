@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Simple Scientific Calculator</title>
+</head>
+
+<body>
+    <form action="" name="calculator">
+        <table align="center">
+            <tr>
+                <td colspan="4" >
+                    <input type="text" name="result">
+                </td>
+            </tr>
+            <!-- First Row -->
+            <tr>
+                <td>
+                    <button type="button" value="sin" onclick="sin()">sin</button>
+                </td>
+                <td>
+                    <button type="button" value="cos" onclick="cos()">cos</button>
+                </td>
+                <td>
+                    <button type="button" value="tan" onclick="tan()">tan</button>
+                </td>
+                <td colspan="2">
+                    <button type="button" value="C" onclick="remv()" class="clear">AC</button>
+                </td>
+            </tr>
+
+            <!-- Second Row -->
+            <tr>
+                <td>
+                    <button type="button" value="x^2" onclick="square()">x<sup>2</sup></button>
+                </td>
+                <td>
+                    <button type="button" value="x^3" onclick="cubbed()">x<sup>3</sup></button>
+                </td>
+                <td>
+                    <button type="button" value="sqrt2" onclick="sqrt2()">&radic;x</button>
+                </td>
+                <td>
+                    <button type="button" value="sqrt3" onclick="sqrt3()">&#8731;x</button>
+                </td>
+            </tr>
+
+            <!-- Third Row -->
+            <tr>
+                <td>
+                    <button type="button" value="1" onclick="number(value)">1</button>
+                </td>
+                <td>
+                    <button type="button" value="2" onclick="number(value)">2</button>
+                </td>
+                <td>
+                    <button type="button" value="3" onclick="number(value)">3</button>
+                </td>
+                <td>
+                    <button type="button" value="BACKSPC" onclick="BACKSPC()">DEL</button>
+                </td>
+            </tr>
+
+            <!-- Fourth Row -->
+            <tr>
+                <td>
+                    <button type="button" value="4" onclick="number(value)">4</button>
+                </td>
+                <td>
+                    <button type="button" value="5" onclick="number(value)">5</button>
+                </td>
+                <td>
+                    <button type="button" value="6" onclick="number(value)">6</button>
+                </td>
+                <td>
+                    <button type="button" value="-" onclick="number(value)">-</button>
+                </td>
+
+            <!-- Fifth Row -->
+            <tr>
+                <td>
+                    <button type="button" value="7" onclick="number(value)">7</button>
+                </td>
+                <td>
+                    <button type="button" value="8" onclick="number(value)">8</button>
+                </td>
+                <td>
+                    <button type="button" value="9" onclick="number(value)">9</button>
+                </td>
+                <td>
+                    <button type="button" value="/" onclick="number(value)">/</button>
+                </td>
+            </tr>
+
+            <!-- Sixth Row -->
+            <tr>
+                <td>
+                    <button type="button" value="." onclick="number(value)">.</button>
+                </td>
+                <td>
+                    <button type="button" value="0" onclick="number(value)">0</button>
+                </td>
+                <td>
+                    <button type="button" value="*" onclick="number(value)">*</button>
+                </td>
+                <td>
+                    <button type="button" value="%" onclick="number(value)">%</button>
+                </td>
+            </tr>
+
+            <!-- Seventh Row -->
+            <tr>
+                <td colspan="2">
+                    <button type="button" value="=" onclick="equal()" class="equal">=</button>
+                </td>
+                <td>
+                    <button type="button" value="+" onclick="number(value)">+</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <!-- Linking Scripts -->
+    <script src="./scripts.js"></script>
+</body>
+</html>
